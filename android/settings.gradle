@@ -1,0 +1,11 @@
+rootProject.name = 'todoMovies'
+include ':react-native-swipe-view'
+project(':react-native-swipe-view').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-swipe-view/android')
+include ':realm'
+project(':realm').projectDir = new File(rootProject.projectDir, '../node_modules/realm/android')
+include ':react-native-navigation'
+project(':react-native-navigation').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-navigation/android/app')
+include ':react-native-blur'
+project(':react-native-blur').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-blur/android')
+
+include ':app'

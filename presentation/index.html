@@ -1,0 +1,380 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<style>
+			.about {
+				display: flex
+			}
+			.about-info {
+				display: flex;
+				flex-direction: column;
+				flex: 1;
+				align-items: center;
+				justify-content: center;
+			}
+			.about-sub{
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: center;
+			}
+			.annotate {
+				font-size: 10px;
+				color: #666;
+			}
+			.flex{
+				display: flex;
+			}
+			.nav {
+				display: flex;
+				flex: 0.5;
+				height: 50vh;
+				justify-content: center;
+				align-items: center;
+			}
+			.nav-first {
+				background-color: rgb(150, 179, 96);	
+			}
+			.nav-second {
+				background-color: rgb(100, 56, 100);	
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>React Native</h1>
+					<h2>Besides downsides</h2>
+				</section>
+				<section>
+					<h2>Hi</h2>
+					<div class="about">
+						<div class="about-info">
+							<div class="about-sub">
+								<div>Kovalenko Alexey</div>
+								<div class="annotate">github: @xxllexx</div>
+								<div class="annotate">twitter: @fe_artist</div>
+								<div>JS Dev in Wix</div>
+							</div>
+						</div>
+						<div class="about-photo">
+							<img src="./images/wixapp.gif" />
+						</div>
+					</div>
+				</section>
+				<section>
+					<h2>RN issues</h2>
+					<section>
+						<div class="fragment fade-in">Interaction</div>
+						<div class="fragment fade-in">Gestures</div>
+						<div class="fragment fade-in">Animations</div>
+						<div class="fragment fade-in">Lists</div>
+						<div class="fragment fade-in">...</div>
+					</section>
+				</section>
+				<section>
+					<h2>Aplication constituents</h2>
+					<div class="fragment fade-in">Navigation</div>
+					<div class="fragment fade-in">State Management</div>
+					<div class="fragment fade-in">Data handling</div>
+					<div class="fragment fade-in">View &amp; Logic</div>
+				</section>
+				<section>
+					<h2>Navigation</h2>
+					<div class="flex">
+						<div class="fragment fade-in nav nav-first">
+							JS implementation
+						</div>
+						<div class="fragment fade-in nav nav-second">
+							Native implementation
+						</div>
+					</div>
+				</section>
+				<section>
+					<h2>JS implementation</h2>
+					<div>
+						<img src="./images/JSImp.png" style="border: 0; background: transparent" />
+					</div>
+				</section>
+				<section>
+					<h2>Native implementation</h2>
+					<div>
+						<img src="./images/NTImp.png" style="border: 0; background: transparent" />
+					</div>
+				</section>
+				<section>
+					<h2>JS implementation</h2>
+					<ul>
+						<li class="fragment fade-in">Customizable Style</li>
+						<li class="fragment fade-in">Customizable Animation</li>
+						<li class="fragment fade-in">Expo compatible</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Native implementation</h2>
+					<ul>
+						<li class="fragment fade-in">Platform Navigation IOS/Android</li>
+						<li class="fragment fade-in">"Automatically" upgrade with platform upgrade</li>
+						<li class="fragment fade-in">Performance</li>
+					</ul>
+        </section>
+        <section>
+          <h2>reacn-native-navigation</h2>
+          <div class="fragment fade-in">Single, Tabbed App</div>
+					<div class="fragment fade-in">Modals, Lightboxes</div>
+					<div class="fragment fade-in">Deep linking</div>
+          <div class="fragment fade-in">Push/Pop/PopToRoot/ResetTo</div>
+          <div class="fragment fade-in">Props</div>
+          <div class="fragment fade-in">Screen Events</div>
+          <div class="fragment fade-in">Buttons customization</div>
+          <div class="fragment fade-in">Style customization</div>
+          <div class="fragment fade-in">Custom Nav. Components</div>
+          <div class="fragment fade-in">Screen lifecycle events</div>
+        </section>
+				<section>
+					<h1>App State</h1>
+					<div class="fragment fade-in">Flux</div>
+					<div class="fragment fade-in">Redux</div>
+					<div class="fragment fade-in">MobX</div>
+					<div class="fragment fade-in">Relay</div>
+					<div class="fragment fade-in">RxJS</div>
+					<div class="fragment fade-in">Alt</div>
+					<div class="fragment fade-in">Reflux</div>
+					<div class="fragment fade-in">Cycle</div>
+					<div class="fragment fade-in">...</div>
+				</section>
+				<section>
+					<h1>Redux</h1>
+					<h2 class="fragment fade-in">too verbose, complex boilerplate</h2>
+				</section>
+				<section>
+					<h1>MobX</h1>
+					<h2 class="fragment fade-in">Too imperative</h2>
+				</section>
+				<section>
+					<h1>Relay</h1>
+					<h2 class="fragment fade-in">Cool! but not today :[</h2>
+				</section>
+				<section>
+					<h1>Remx</h1>
+					<h2 class="fragment fade-in">what?</h2>
+        </section>
+				<section>
+          <h2>Remx Basics</h2>
+          <section>
+              <h3>Create Store</h3>		
+              <pre>
+                <code data-trim data-noescape>
+                  import * as remx from 'remx';
+                  const initialState = {
+                    loading: true,
+                    posts: {},
+                    selectedPosts: [],
+                  };
+                  const state = remx.state(initialState);
+                </code>
+              </pre>    
+            </section>
+            <section>
+              <h3>Create Setters &amp; getters</h3>		
+              <pre>
+                <code data-trim>
+                  import * as remx from 'remx';
+    
+                  export const getters = remx.getters({
+                    isLoading() {
+                      return state.loading;
+                    }
+                  });
+    
+                  export const setters = remx.setters({
+                    setLoading(isLoading) {
+                      state.loading = isLoading;
+                    }   
+                 });
+                </code>
+              </pre>    
+            </section>
+            <section>
+              <h3>Connect store to component</h3>		
+              <pre>
+                <code data-trim>
+                    import { connect } from 'remx';
+                    import {getters as store} from './someStore';
+                    
+                    const SomeComponent = (props) => (
+                      <Text>{props.isLoading}</Text>
+                    );
+                    
+                    const mapStateToProps = (ownProps) => ({
+                      isLoading: store.isLoading();
+                    });
+                    
+                    export default connect(mapStateToProps)(SomeComponent);
+                </code>
+              </pre>    
+            </section>
+        </section>
+        <section>
+          <h1>Data handling</h1>
+        </section>
+        <section>
+          <h1>AsyncStorage</h1>
+          <h2 class="fragment fade-in">too simple</h2> 
+        </section>
+        <section>
+            <h1>Firebase</h1>
+            <h2 class="fragment fade-in">cool, but not today</h2>
+        </section>
+        <section>
+            <h1>Realm</h1>
+        </section>
+        <section>
+            <h2>Realm Overview</h2>
+            <div class="fragment fade-in">Native objects</div>
+            <div class="fragment fade-in">Zero-copy</div>
+            <div class="fragment fade-in">Live objects pattern</div>
+            <div class="fragment fade-in">ETC.</div>
+        </section>
+        <section>
+            <h2>Realm Features</h2>
+            <div class="fragment fade-in">Models</div>
+            <div class="fragment fade-in">CRUD</div>
+            <div class="fragment fade-in">Queries</div>
+            <div class="fragment fade-in">Notifications</div>
+            <div class="fragment fade-in">Migration</div>
+        </section>
+        <section>
+          <h1>View &amp; Logic</h1>
+          <div class="fragment fade-in">Stateful VS Stateless</div>
+          <div class="fragment fade-in">Component VS PureComponent</div>
+          <div class="fragment fade-in">state VS props</div>
+        </section>
+        <section>
+            <h2>Stateful VS Stateless</h2>
+            <pre>
+              <code data-trim>
+                  //stateless component
+                  const SomeComponent = (props) => (
+                    <Text>{props.isLoading}</Text>
+                  );
+                  
+                  //Stateful component
+                  class SomeComponent extends React.Component {
+                    constructor(props) {
+                      super(props);
+                      this.state = {someState: true};
+                    }
+                    //...lifecycle methods
+                    //...children references
+                  }
+              </code>
+            </pre>    
+          </section>
+          <section>
+            <h2>Component VS PureComponent</h2>
+            <div><mark>PureComponent is exactly the same as Component except that it handles the shouldComponentUpdate method for you</mark></div>
+            <div>Shallow comparison: props != nextProps and state != nextProps</div>
+          </section>
+          <section>
+              <h2>state VS props</h2>
+          </section>
+          <section>
+              <h1>Recompose</h1>
+              <div class="fragment fade-in">HOC lib</div>
+              <div class="fragment fade-in">composable</div>
+              <div class="fragment fade-in">allows to split logic and view</div>
+          </section>
+          <section>
+              <h1>Example #1</h1>
+              <pre>
+                <code data-trim>
+                    import {compose, withState, mapProps, pure} from 'recompose';
+                    const BaseComponent = props => {...}
+                    
+                    // Note that the order has reversed — props flow from top to bottom
+                    const enhance = compose(
+                      withState(/*...args*/),
+                      mapProps(/*...args*/),
+                      pure
+                    )
+
+                    const EnhancedComponent = enhance(BaseComponent)
+                </code>
+              </pre>
+          </section>
+          <section>
+              <h1>Example #2</h1>
+              <pre>
+                <code data-trim>
+                    import {compose, branch, renderComponent} from 'recompose';
+                    const BaseComponent = props => {...}
+                    const LoaderComponent = props => {...}
+
+                    const spinnerWhileLoading = isLoadingPred => branch(
+                      isLoadingPred,
+                      renderComponent(LoaderComponent)
+                    );
+
+                    const enhance = spinnerWhileLoading(props => props.isLoading);
+                    //...
+                    export const FinalComponent = compose(
+                      connect(someAppStateProps),
+                      enhance
+                    )(BaseComponent)
+                    
+                    
+                </code>
+              </pre>
+          </section>
+          <section>
+              <h1>let's code ?</h1>
+          </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				controls: false,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+
+			Reveal.addEventListener( 'ready', function( event ) {
+                // event.currentSlide, event.indexh, event.indexv
+                // Reveal.slide( 9 )
+            } );
+		</script>
+	</body>
+</html>
+
